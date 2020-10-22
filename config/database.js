@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
       connector: 'mongoose',
       settings: {
         client: 'mongo',
-        host: env('DATABASE_HOST', '47.113.81.85'),
+        host: env('DATABASE_HOST', 'localhost'),
         port: env.int('DATABASE_PORT', 27017),
         database: env('DATABASE_NAME', 'blog'),
         username: env('DATABASE_USERNAME', 'liang'),
